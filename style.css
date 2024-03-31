@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--nutmeg: hsl(14, 45%, 36%);
+	--darkRasp: hsl(332, 51%, 32%);
+	--white: hsl(0, 0%, 100%);
+	--roseWhite: hsl(330, 100%, 98%);
+	--eggshell: hsl(30, 54%, 90%);
+	--lgGray: hsl(30, 18%, 87%);
+	--wengeBrown: hsl(30, 10%, 34%);
+	--darkCharcoal: hsl(24, 5%, 18%);
+}
+
+h1,
+h2 {
+	font-family: 'Young Serif', sans-serif;
+	font-weight: 400;
+}
+
+body {
+	font-family: 'Outfit', sans-serif;
+	padding: 0 0rem 1rem 0rem;
+	background-color: var(--eggshell);
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	margin: 4rem;
+}
+
+.container {
+	max-width: 48vw;
+	background-color: var(--white);
+	padding: 2rem;
+	border-radius: 1rem;
+}
+
+img {
+	width: 100%;
+	border-radius: 1rem;
+	object-fit: cover;
+}
+
+h1 {
+	color: var(--darkCharcoal);
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.description {
+	color: var(--wengeBrown);
+	font-weight: 400;
+	line-height: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.prep-sec {
+	background-color: var(--eggshell);
+	padding: 1.5rem;
+	border-radius: 1rem;
+	line-height: 2rem;
+}
+
+.prep-sec p {
+	font-weight: 700;
+	color: var(--darkRasp);
+	margin-bottom: 0.5rem;
+}
+
+ul {
+	list-style-position: inside;
+}
+
+.prep-dets {
+	padding-left: 0.5rem;
+	font-weight: 400;
+	color: var(--wengeBrown);
+}
+
+.prep-dets span {
+	font-weight: 700;
+	padding-left: 0.5rem;
+}
+
+.prep-dets li::marker {
+	font-weight: 400;
+}
+
+.ingredients-sec {
+	padding: 1.5rem 0;
+	line-height: 2rem;
+}
+
+h2 {
+	color: var(--nutmeg);
+	margin-bottom: 1rem;
+}
+
+.ingredients-sec ul {
+	padding-left: 0.5rem;
+	font-weight: 400;
+	color: var(--wengeBrown);
+}
+
+.ingredients-sec li::marker {
+	font-weight: 400;
+}
+
+.ingredients-sec li {
+	margin-bottom: 0.5rem;
+}
+
+hr {
+	border: 1px solid var(--lgGray);
+	margin-bottom: 1rem;
+}
+
+.instruction {
+	padding: 1.5rem 0;
+	line-height: 2rem;
+}
+
+.instructions {
+	padding-left: 1.5rem;
+	font-weight: 400;
+	color: var(--wengeBrown);
+}
+
+.instructions li {
+	padding-left: 1rem;
+	line-height: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.instructions li::marker {
+	font-weight: 700;
+	color: var(--nutmeg);
+}
+
+.nutrition p {
+	color: var(--wengeBrown);
+	margin-bottom: 1rem;
+}
+
+table {
+	width: 100%;
+}
+
+td {
+	border-bottom: 1px solid var(--lgGray);
+	padding: 1rem 0;
+}
+
+td:nth-child(1) {
+	color: var(--wengeBrown);
+	padding-left: 2rem;
+}
+
+td:nth-child(2) {
+	color: var(--nutmeg);
+	padding-left: 4rem;
+	font-weight: 600;
+}
+
+tr:last-child td {
+	border: none;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(0, 0%, 0%);
+}
+
+@media screen and (max-width: 600px) {
+	main {
+		margin: 0;
+	}
+	.container {
+		max-width: 100%;
+		padding: 0;
+		border-radius: 0;
+	}
+	img {
+		border-radius: 0;
+	}
+	.mob {
+		padding: 0 2rem;
+	}
+}
